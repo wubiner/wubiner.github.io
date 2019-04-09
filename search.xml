@@ -2,12 +2,12 @@
 <search>
   <entry>
     <title><![CDATA[Next主题库使用记录]]></title>
-    <url>wubiner.github.io%2F2019%2F04%2F09%2FNext%E4%B8%BB%E9%A2%98%E5%BA%93%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%2F</url>
+    <url>%2Fwubiner.github.io%2F2019%2F04%2F09%2FNext%E4%B8%BB%E9%A2%98%E5%BA%93%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"><![CDATA[添加头像设置添加头像时，需要进入到配置文件_config.yml,找到avatar关键词，设置内容如下12345avatar: # In theme directory (source/images): /images/avatar.gif # In site directory (source/uploads): /uploads/avatar.gif # You can also use other linking images. url: /uploads/avatar.gif 尝试在avatar后直接添加 /uploads/avatar.gif，但是提示url处存在错误❌，此处uploads文件夹为自己创建此处测试使用jpg, png, gif格式图片均可正常显示。 添加音乐外链 在侧边栏中添加音乐播放效果时，需要找到音乐外链所对应的网页源码，在theme/next/layout/_macro/sidebar.swig中进行修改，个人看代码这部分其实就是对应着侧边栏的网页源码，因此只需要在自己所想要添加的位置处补充音乐外链源码即可，例如在links下方添加音乐效果：1234 &#123;% endif %&#125;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=86 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=22636878&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;&lt;/section&gt; &#123;% if theme.custom_file_path.sidebar %&#125; 音乐外链获取可以直接在网易云/qq音乐网页端找到所想要播放的歌曲页面，找到音乐外链即可。对于保护权限，不支持的音乐虽然可以获得其id，在代码处替换id即可，可以正常在博客侧边栏显示但仍不可播放。]]></content>
   </entry>
   <entry>
     <title><![CDATA[iOS第三方库管理工具CocoaPods]]></title>
-    <url>wubiner.github.io%2F2019%2F04%2F08%2FiOS%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7CocoaPods%2F</url>
+    <url>%2Fwubiner.github.io%2F2019%2F04%2F08%2FiOS%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7CocoaPods%2F</url>
     <content type="text"><![CDATA[CocoaPods是辅助iOS开发过程中所需要使用的第三库的管理，使用该工具可以免去手动添加lib，下载framework的操作，并且还可以维护其更新。使用G主题 1.安装（需先安装最新版ruby环境） 安装rvm 终端输入：12curl -L https://get.rvm.io | bash -s stable source ~/.rvm/scripts/rvm 检查一下是否安装正确 ：1rvm -v 成功显示rvm已安装版本后查询已知ruby版本1rvm list known 图中可以看到最新ruby版本是2.6.0，所以接下来安装2.6.0版本ruby。一定要在此处安装最新版本，，不然之后还是无法使用pods。1rvm install 2.6.0 安装结束需要更改ruby的源地址，以供在国内使用。目前应该使用的是https://gems.ruby-china.com/，之前自己在网上搜资料，搜到的是淘宝，还有https://gems.ruby-china.org/，淘宝那个有说无法使用，自己试的是china.org结果发现后续仍会报错，搜资料才知道后缀现在改为 .com。123gem sources --remove https://rubygems.org/gem source -a https://gems.ruby-china.com/ 替换成功后安装cocoapods，最好是使用以下语句哦，不然会出现无权限报错。12sudo gem install -n /usr/local/bin cocoapods 安装顺利的话执行pod setup，这个好像时间会比较久。。12pod setup 成功后会提示如果需要更新可以执行以下语句12sudo gem install cocoapods --pre 以上步骤未报错的话，应该安装没问题了，注意一定要安装最新版ruby哦，如果不是最新版就直接从rvm list known语句开始重来一次，，还有那个源地址一定要是https://gems.ruby-china.com/。这两点都是极易报错的地方呢。 2.使用 在Xcode项目文件夹下添加profile文件，它的内容是添加项目所需要的第三方库名。可以使用vim profile打开编辑。以下图为例在该profile文件路径下执行pod install,即可将上述所需第三方库下载到工程中，并且可以直接使用，无需进行参数配置。1pod install PS:自己是因为要打开https://github.com/Aufree/ESTMusicPlayer工程所以才接触到cocoapods，有兴趣的朋友也可以用这个工程试一试～这个工程是一款音乐播放器～]]></content>
       <categories>
         <category>测试</category>
@@ -18,7 +18,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>wubiner.github.io%2F2019%2F04%2F02%2Fhello-world%2F</url>
+    <url>%2Fwubiner.github.io%2F2019%2F04%2F02%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
