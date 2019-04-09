@@ -351,7 +351,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-09 10:44:14" itemprop="dateModified" datetime="2019-04-09T10:44:14+08:00">2019-04-09</time>
+                <time title="Modified: 2019-04-09 10:53:43" itemprop="dateModified" datetime="2019-04-09T10:53:43+08:00">2019-04-09</time>
               
             
           </span>
@@ -396,7 +396,16 @@
 <p>检查一下是否安装正确 ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rvm -v</span><br></pre></td></tr></table></figure></p>
 <p><img src="https://img-blog.csdnimg.cn/20190401191011434.png" alt="avatar"><br>成功显示rvm已安装版本后查询已知ruby版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rvm list known</span><br></pre></td></tr></table></figure></p>
 <p><img src="https://img-blog.csdnimg.cn/20190401191111449.png" alt="avatar"><br>图中可以看到最新ruby版本是2.6.0，所以接下来安装2.6.0版本ruby。一定要在此处<strong>安装最新版本</strong>，，不然之后还是无法使用pods。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rvm install 2.6.0</span><br></pre></td></tr></table></figure></p>
-<p>安装结束需要更改ruby的源地址，以供在国内使用。目前应该使用的是<a href="https://gems.ruby-china.com/，之前自己在网上搜资料，搜到的是淘宝，还有https://gems.ruby-china.org/，淘宝那个有说无法使用，自己试的是china.org结果发现后续仍会报错，搜资料才知道后缀现在改为" target="_blank" rel="noopener">https://gems.ruby-china.com/，之前自己在网上搜资料，搜到的是淘宝，还有https://gems.ruby-china.org/，淘宝那个有说无法使用，自己试的是china.org结果发现后续仍会报错，搜资料才知道后缀现在改为</a> <strong><em>.com</em></strong>。</p>
+<p>安装结束需要更改ruby的源地址，以供在国内使用。目前应该使用的是<a href="https://gems.ruby-china.com/" target="_blank" rel="noopener">https://gems.ruby-china.com/</a>，之前自己在网上搜资料，搜到的是淘宝，还有<a href="https://gems.ruby-china.org/" target="_blank" rel="noopener">https://gems.ruby-china.org/</a>，淘宝那个有说无法使用，自己试的是china.org结果发现后续仍会报错，搜资料才知道后缀现在改为 <strong><em>.com</em></strong>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gem sources --remove https://rubygems.org/</span><br><span class="line"></span><br><span class="line">gem source -a https://gems.ruby-china.com/</span><br></pre></td></tr></table></figure></p>
+<p>替换成功后安装cocoapods，最好是使用以下语句哦，不然会出现无权限报错。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sudo gem install -n /usr/local/bin cocoapods</span><br></pre></td></tr></table></figure></p>
+<p>安装顺利的话执行pod setup，这个好像时间会比较久。。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">pod setup</span><br></pre></td></tr></table></figure></p>
+<p>成功后会提示如果需要更新可以执行以下语句<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sudo gem install cocoapods --pre</span><br></pre></td></tr></table></figure></p>
+<p>以上步骤未报错的话，应该安装没问题了，注意一定要安装<strong>最新版ruby</strong>哦，如果不是最新版就直接从rvm list known语句开始重来一次，，还有那个源地址一定要是<a href="https://gems.ruby-china.com/" target="_blank" rel="noopener">https://gems.ruby-china.com/</a>。这两点都是极易报错的地方呢。</p>
+<blockquote>
+<p>2.使用</p>
+</blockquote>
+<p>在Xcode项目文件夹下添加profile文件，它的内容是添加项目所需要的第三方库名。可以使用vim profile打开编辑。以下图为例<br>!(<a href="https://img-blog.csdnimg.cn/20190401192816951.png" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20190401192816951.png</a>)<br>在该profile文件路径下执行pod install,即可将上述所需第三方库下载到工程中，并且可以直接使用，无需进行参数配置。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod install</span><br></pre></td></tr></table></figure></p>
+<p>PS:自己是因为要打开<a href="https://github.com/Aufree/ESTMusicPlayer" target="_blank" rel="noopener">https://github.com/Aufree/ESTMusicPlayer</a>工程所以才接触到cocoapods，有兴趣的朋友也可以用这个工程试一试～这个工程是一款音乐播放器～</p>
 
           
         
