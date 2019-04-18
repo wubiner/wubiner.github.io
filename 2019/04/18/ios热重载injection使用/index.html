@@ -96,17 +96,20 @@
 
 
 
-  <meta name="description" content="期待知识的力量！！！不愿做小白的技术小白～～～  QQ:能查到算我输，😂E-mail:你猜喽。。。😁 为什么我在跳绳？？？    因为我胖啊！！！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About Me">
-<meta property="og:url" content="http://wubiner.github.io/about/index.html">
+  <meta name="description" content="Injection可以在不重新编译整个程序的情况下，用于观察代码修改后的效果，从而提升开发效率。目前支持模拟器运行调试。GitHub源码地址为：https://github.com/johnno1962/injectionforxcode.git上述源码是作为Xcode插件使用Injection，但是自Xcode8以后不支持第三方插件，所以推出了app，可以在AppStore中下载，名字是Inje">
+<meta name="keywords" content="iOS开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ios热重载injection使用">
+<meta property="og:url" content="http://wubiner.github.io/2019/04/18/ios热重载injection使用/index.html">
 <meta property="og:site_name" content="斌儿‘s blogs">
-<meta property="og:description" content="期待知识的力量！！！不愿做小白的技术小白～～～  QQ:能查到算我输，😂E-mail:你猜喽。。。😁 为什么我在跳绳？？？    因为我胖啊！！！">
+<meta property="og:description" content="Injection可以在不重新编译整个程序的情况下，用于观察代码修改后的效果，从而提升开发效率。目前支持模拟器运行调试。GitHub源码地址为：https://github.com/johnno1962/injectionforxcode.git上述源码是作为Xcode插件使用Injection，但是自Xcode8以后不支持第三方插件，所以推出了app，可以在AppStore中下载，名字是Inje">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-10T13:17:20.708Z">
+<meta property="og:image" content="https://gitee.com/lab601_chenhao/image-bed/raw/master/FileWatch.jpg">
+<meta property="og:updated_time" content="2019-04-18T08:15:39.578Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About Me">
-<meta name="twitter:description" content="期待知识的力量！！！不愿做小白的技术小白～～～  QQ:能查到算我输，😂E-mail:你猜喽。。。😁 为什么我在跳绳？？？    因为我胖啊！！！">
+<meta name="twitter:title" content="ios热重载injection使用">
+<meta name="twitter:description" content="Injection可以在不重新编译整个程序的情况下，用于观察代码修改后的效果，从而提升开发效率。目前支持模拟器运行调试。GitHub源码地址为：https://github.com/johnno1962/injectionforxcode.git上述源码是作为Xcode插件使用Injection，但是自Xcode8以后不支持第三方插件，所以推出了app，可以在AppStore中下载，名字是Inje">
+<meta name="twitter:image" content="https://gitee.com/lab601_chenhao/image-bed/raw/master/FileWatch.jpg">
 
 
 
@@ -114,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="http://wubiner.github.io/about/">
+  <link rel="canonical" href="http://wubiner.github.io/2019/04/18/ios热重载injection使用/">
 
 
 
@@ -124,7 +127,7 @@
   };
 </script>
 
-  <title>About Me | 斌儿‘s blogs</title>
+  <title>ios热重载injection使用 | 斌儿‘s blogs</title>
   
 
 
@@ -227,7 +230,7 @@
         
         
           
-          <li class="menu-item menu-item-about menu-item-active">
+          <li class="menu-item menu-item-about">
 
     
     
@@ -349,84 +352,221 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wubiner.github.io/2019/04/18/ios热重载injection使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BelleBinwu">
+      <meta itemprop="description" content="技术小白的博客">
+      <meta itemprop="image" content="/uploads/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="斌儿‘s blogs">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">About Me
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <blockquote>
-<p>期待知识的力量！！！<br>不愿做小白的技术小白～～～</p>
+          <h1 class="post-title" itemprop="name headline">ios热重载injection使用
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-18 10:47:23 / Modified: 16:15:39" itemprop="dateCreated datePublished" datetime="2019-04-18T10:47:23+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/04/18/ios热重载injection使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/18/ios热重载injection使用/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Injection可以在不重新编译整个程序的情况下，用于观察代码修改后的效果，从而提升开发效率。目前支持模拟器运行调试。<br>GitHub源码地址为：<a href="https://github.com/johnno1962/injectionforxcode.git" target="_blank" rel="noopener">https://github.com/johnno1962/injectionforxcode.git</a><br>上述源码是作为Xcode插件使用Injection，但是自Xcode8以后不支持第三方插件，所以推出了app，可以在AppStore中下载，名字是InjectionIII.<br>下载完成后运行该工具，在pc右上方可以看到其菜单仅包含7项内容。<br><img src="https://gitee.com/lab601_chenhao/image-bed/raw/master/FileWatch.jpg" alt="avatar"><br><a id="more"></a></p>
+<blockquote>
+<p>InjectionIII使用</p>
 </blockquote>
-<p>QQ:能查到算我输，😂<br>E-mail:你猜喽。。。😁</p>
-<pre><code>为什么我在跳绳？？？
-   因为我胖啊！！！
-</code></pre>
-        
-      </div>
-      
-      
+<p>1.InjectionIII应用</p>
+<p>在open project选项中选择要运行的项目文件夹后，点击select project directory。要确保File Watcher处于开启状态，即其前方有☑️标示。</p>
+<p>2.Xcode应用<br>（1）Xcode打开需要运行的项目，在AppDelegate.m文件中的application didFinishLaunchingWithOptions函数中添加如下代码，此默认是选择iOS，可依据具体需要选择对应设备代码。这里所用的##Xcode版本为10.1##。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions &#123;</span><br><span class="line">    // Override point for customization after application launch.</span><br><span class="line">#if DEBUG</span><br><span class="line">    // iOS</span><br><span class="line">    [[NSBundle bundleWithPath:@&quot;/Applications/InjectionIII.app/Contents/Resources/iOSInjection10.bundle&quot;] load];</span><br><span class="line">    // tvOS</span><br><span class="line">    //[[NSBundle bundleWithPath:@&quot;/Applications/InjectionIII.app/Contents/Resources/tvOSInjection.bundle&quot;] load];</span><br><span class="line">    // macOS</span><br><span class="line">    //[[NSBundle bundleWithPath:@&quot;/Applications/InjectionIII.app/Contents/Resources/macOSInjection.bundle&quot;] load];</span><br><span class="line">#endif</span><br><span class="line">    return YES;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>(2)在需要修改的controller.m文件中添加injected方法，下方示例代码表示后期要修改view的背景颜色，可依据实际需求添加相应的修改内容。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-(void)injected&#123;</span><br><span class="line">    NSLog(@&quot;I&apos;ve been injected: %@&quot;, self);</span><br><span class="line">    self.view.backgroundColor = [UIColor redColor];</span><br><span class="line">    [self viewDidLoad];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>（3）command+R 运行Xcode程序，此时可以看到输出的log信息里有如下内容：此内容表明链接成功。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Injection connected, watching /Users/apple/Desktop/ios_Program/testinjection/**</span><br></pre></td></tr></table></figure></p>
+<p>（4）在对应需要修改的controller.m文件界面中点击command+s保存键，此时可以观察到view背景色变为红色。</p>
+<blockquote>
+<p>说明</p>
+</blockquote>
+<p>InjectionIII只能用于模拟器中使用，而且对于不同的需要修改的view controller都需要添加injected方法。网上也可以找到相应的统一化方法，避免重复添加injected方法。</p>
+<p>需要观察的修改内容应该在injected方法中添加，若是要在模拟器观察实际情况还需要在其本应出现的位置进行修改！！！</p>
+<p>之前尝试过用injection源码编译，但是会报错误，can not open ～/bin/unhide.sh file for writing</p>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS开发/" rel="tag"># iOS开发</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/09/Next主题库使用记录/" rel="next" title="Next主题库使用记录">
+                <i class="fa fa-chevron-left"></i> Next主题库使用记录
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -732,9 +872,28 @@
   <script id="dsq-count-scr" src="https://wubiner.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://wubiner.github.io/2019/04/18/ios热重载injection使用/";
+    this.page.identifier = "2019/04/18/ios热重载injection使用/";
+    this.page.title = 'ios热重载injection使用';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://wubiner.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
+
+
+  
 
 
   
